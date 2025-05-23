@@ -1,0 +1,229 @@
+/* RESET + BASE */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  color: #f0f8ff;
+  line-height: 1.6;
+}
+
+/* NAVBAR */
+.navbar {
+  position: sticky;
+  top: 0;
+  background: rgba(15, 32, 39, 0.85);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+  padding: 1rem 2rem;
+}
+
+.navbar nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar nav h1 {
+  font-size: 1.8rem;
+  color: #00c6ff;
+}
+
+.navbar nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+.navbar nav a {
+  text-decoration: none;
+  color: #f0f8ff;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.navbar nav a:hover {
+  color: #00c6ff;
+}
+
+/* HERO */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem 2rem;
+  background: rgba(0, 198, 255, 0.08);
+  min-height: 100vh;
+  flex-wrap: wrap;
+}
+
+.hero-content {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.hero-content .text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero-content .text h2 span {
+  color: #00c6ff;
+}
+
+.hero-content .text p {
+  font-size: 1.2rem;
+}
+
+.profile-img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 20px;
+  border: 4px solid #00c6ff;
+  box-shadow: 0 0 15px rgba(0, 198, 255, 0.4);
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+/* GLASS SECTIONS */
+.glass-section {
+  background: rgba(0, 198, 255, 0.08);
+  backdrop-filter: blur(18px);
+  box-shadow: 0 8px 32px rgba(0, 198, 255, 0.15);
+  padding: 4rem 2rem;
+  margin: 2rem;
+  border-radius: 20px;
+}
+
+/* PROJECTS */
+.projects-container {
+  display: flex;
+  gap: 5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project-card {
+  background: rgba(0, 198, 255, 0.12);
+  padding: 2rem;
+  border-radius: 15px;
+  width: 250px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 198, 255, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 30px rgba(0, 198, 255, 0.25);
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  background: rgba(15, 32, 39, 0.9);
+  color: #d0eaff;
+  font-size: 0.9rem;
+}
+/* CONTACT SECTION */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 0 auto;
+  gap: 1rem;
+}
+
+.contact-form label {
+  font-weight: 600;
+  color: #00c6ff;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.8rem 1rem;
+  border-radius: 10px;
+  border: none;
+  background: rgba(255, 255, 255, 0.1);
+  color: #f0f8ff;
+  font-size: 1rem;
+  resize: none;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #b0dfff;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  background: rgba(0, 198, 255, 0.2);
+  box-shadow: 0 0 8px #00c6ff;
+}
+
+.contact-form button {
+  background-color: #00c6ff;
+  color: #0f2027;
+  font-weight: 700;
+  border: none;
+  border-radius: 15px;
+  padding: 1rem;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #009edc;
+}
+
+.project-card img {
+  width: 100%;       /* Image takes full width of card */
+  height: auto;      /* Maintain aspect ratio */
+  border-radius: 12px; /* Rounded corners to match card style */
+  object-fit: cover; /* Crop nicely if needed */
+  display: block;    /* Remove inline gap */
+  margin-bottom: 1rem;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.about-text {
+  flex: 1 1 300px;
+  min-width: 280px;
+}
+
+.about-image {
+  flex: 1 1 300px;
+  min-width: 280px;
+}
+
+.about-image img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 198, 255, 0.3);
+  object-fit: cover;
+}

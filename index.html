@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="navbar">
+    <nav>
+      <h1>Portfolio</h1>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <img
+  class="profile-img"
+  src="testimonial.jpg"
+  alt="Avatar"/>
+
+        <h2>Hello, I'm <span>Mayank Thakur</span></h2>
+        <p>Web Developer | Learner | Tech Enthusiast</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="glass-section about-me">
+  <div class="about-content">
+    <div class="about-text">
+      <h2>About Me</h2>
+      <p>
+        I am a passionate developer who loves creating beautiful and functional web experiences.
+      </p>
+    </div>
+    <div class="about-image">
+      <img src="testimonial.jpg" alt="About me image" />
+    </div>
+  </div>
+</section>
+
+
+  <section id="projects" class="glass-section">
+    <h2>My Projects</h2>
+    
+    <div class="projects-container">
+      <div class="project-card">
+        <img src="calc.jpg" alt="Project 1" />
+          <h3>Modern Calculator</h3>
+             <p>Created a Modern Calculator using HTML CSS and Js.</p>
+    </div>
+
+    <div class="project-card">
+      <img src="passgen.jpg" alt="Project 2" />
+        <h3>Password Generator</h3>
+          <p>Took one-step further in Js to create a Password Generator using js and some Algos.</p>
+            </div>
+
+    <div class="project-card">
+        <img src="disc.jpg" alt="Project 3" />
+         <h3>Discord Clone</h3>
+          <p>Created a Landing page of Discord sing HTML and CSS keeping in mind the alignment oa elements and color palllets.</p>
+    </div>
+
+    <div class="projects-container">
+      <div class="project-card">
+        <img src="razarpay.jpg" alt="Project 1" />
+          <h3>Razorpay</h3>
+             <p>Another advance step to master CSS. Created this project in Tailwind CSS</p>
+    </div>
+
+    <div class="project-card">
+      <img src="tictactoe.jpg" alt="Project 2" />
+        <h3>tictactoe</h3>
+          <p>A simplle but unique game for beginning projects. focused on JS to implement the game. </p>
+            </div>
+
+    </div>
+  </section>
+<section id="contact" class="glass-section">
+  <h2>Contact Me</h2>
+  <form class="contact-form" action="#" method="POST">
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" placeholder="Your Name" required />
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" placeholder="Your Email" required />
+
+    <label for="message">Message</label>
+    <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+
+    <button type="submit">Send</button>
+  </form>
+</section>
+
+  <footer>
+    <p>Made with ❤️ by Mayank Thakur</p>
+  </footer>
+
+</body>
+</html>
